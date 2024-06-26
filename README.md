@@ -1,16 +1,21 @@
+# WiiSX Titanium
+
+A fork of the upstream WiiSX/CubeSX (formerly PCSXGC) made by SuperrSonic, with WiiFlow support and some changes and fixes.
+
+Also it is optimized for run the game Power Rangers: Lightspeed Rescue.
+
+# ORIGINAL README
+
 README : WiiSX / CubeSX
 Beta 4.1
 
-LICENSE:
-    This software is licensed under the GNU General Public License v2
-      which is available at: http://www.gnu.org/licenses/gpl-2.0.txt
-    This requires any released modifications to be licensed similarly,
-      and to have the source available.
+## LICENSE:
+    This software is licensed under the GNU General Public License v2 which is available at: http://www.gnu.org/licenses/gpl-2.0.txt
+    This requires any released modifications to be licensed similarly, and to have the source available.
     
-    WiiSX/CubeSX and their respective logos are trademarks of Team Wii64
-      and should not be used in unofficial builds.
+WiiSX/CubeSX and their respective logos are trademarks of Team Wii64 and should not be used in unofficial builds.
 
-QUICK USAGE:
+## QUICK USAGE:
  * ISOs can be .bin/.cue (Make sure .cue contains _relative_ directory!), .img, or .iso format
  * To install: Extract the contents of wiiSX-<version>.zip to the root of your SD card
  * SD Card detection order is as follows: 
@@ -31,7 +36,7 @@ QUICK USAGE:
    Wiimote+Nunchuck (1 & 2), or the reset button
      (Note: this must be done to save your game; it will not be done automatically)
 
-Controls:
+**Controls:**
  * Controls are fully configurable so any button on your controller can be mapped
  * The controller configuration screen presents each PSX button and allows you to toggle through sources
  * There are 4 configuration slots for each type of controller
@@ -42,8 +47,8 @@ Controls:
  * There is an option to invert the Y axis of the PSX's analog sticks; by default this is 'Normal Y'
  * The 'Menu Combo' configuration allows you to select a button combination to return to the menu
 
-Settings:
- * General
+## Settings:
+ * **General**
    * Native Saves Device: Choose where to load and save native game saves
    * Save States Device: Choose where to load and save save states
    * Select CPU Core: Choose whether to play games with pure interpreter
@@ -66,10 +71,10 @@ Settings:
    * Copy Saves: Not yet implemented
    * Delete Saves: Not yet implemented
 
-COMPATIBILITY:
+## COMPATIBILITY:
  Report any issues to https://github.com/emukidid/pcsxgc/issues
 
-CREDITS:
+## CREDITS:
  * General Coder: emu_kidid
  * Graphics & Menu Coder: sepp256
  * Audio & Core Coder: tehpola
@@ -84,23 +89,23 @@ CREDITS:
      ( http://sourceforge.net/projects/devkitpro )
  * Visit us on IRC. EFNet #gc-forever or www.gc-forever.com or https://github.com/emukidid/pcsxgc/
 
-CHANGE LOG:
-	* See releases on github for these now, this section here is no longer maintained.
-Beta 4.0:
-	* libpsxcore properly integrated, no more hacky mess to receive fixes from upstream
-	* switch to upstream unai gpu plugin for a huge performance boost
-	* triple buffering
-	* switch to cmake
-Beta 3.0:
-	* Back nearly 13 years later with a new dynarec thanks to pcercuei's lightrec
-	  * Increases speed and compatibility
-	* Sync'd with upstream pcsx-ReARMed
-	  * Eliminates XA/CDDA slowdown completely on Wii
-	* dfsound audio plugin
-	* speed improvements in the soft graphics plugin thanks to tips from Extrems
-	* SD2SP2 support on GameCube
-	* General UI bugfixes and memory leaks addressed
-Beta 2.1:
+## CHANGE LOG:
+  * See releases on github for these now, this section here is no longer maintained.
+### Beta 4.0:
+  * libpsxcore properly integrated, no more hacky mess to receive fixes from upstream
+  * switch to upstream unai gpu plugin for a huge performance boost
+  * triple buffering
+  * switch to cmake
+### Beta 3.0:
+  * Back nearly 13 years later with a new dynarec thanks to pcercuei's lightrec
+    + Increases speed and compatibility
+  * Sync'd with upstream pcsx-ReARMed
+    + Eliminates XA/CDDA slowdown completely on Wii
+  * dfsound audio plugin
+  * speed improvements in the soft graphics plugin thanks to tips from Extrems
+  * SD2SP2 support on GameCube
+  * General UI bugfixes and memory leaks addressed
+### Beta 2.1:
    * Compiled with devkitPPC r21 / libOGC SVN
    * Compiled with new libDI / DVDx V2
    * Saving improvements
@@ -110,12 +115,12 @@ Beta 2.1:
      * Fixed inverted Y-axis on analog input
      * Fixed rumble
      * Fixed button presses on unused input port
-     + Added ìHomeî button as a menu combo for CC
+     + Added ‚ÄúHome‚Äù button as a menu combo for CC
      + Added disable rumble setting
    * Network improvements
      * SMB correction to allow anonymous user and password
      + Threaded network init and proper error messages when it fails
-Beta 2:
+### Beta 2:
    * Compiled with devkitPPC r21 / libOGC SVN
    * Compiled with new libDI / DVDx V2
    * DVD reads are now done with direct PowerPC access
@@ -145,7 +150,7 @@ Beta 2:
    + CDRMooby
      * Improved compatibility
      * CDDA not implemented yet
-Beta 1:
+### Beta 1:
    * Working audio (choppy)
    * DVD loading
    * Software GFX with GX scaling
