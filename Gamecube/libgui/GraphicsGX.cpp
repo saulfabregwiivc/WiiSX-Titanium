@@ -85,6 +85,8 @@ Graphics::Graphics(GXRModeObj *rmode)
 	case VIDEOMODE_DS:
 		is240p = 1;
 		vmode = isPAL ? &TVEurgb60Hz240DsAa : &TVNtsc240DsAa;
+		// Set correct viTVMode based on the current mode used, which should be compatible with both NTSC and PAL
+		vmode->viTVMode = VI_TVMODE(VIDEO_GetPreferredMode(NULL)->viTVMode >> 2, VI_NON_INTERLACE);
 		memcpy( &vmode_phys, vmode, sizeof(GXRModeObj));
 		break;
 	}
